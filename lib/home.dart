@@ -11,7 +11,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   List currencies;
   final List<MaterialColor> colors = [
-    Colors.brown,
+    Colors.pink,
     Colors.blue,
     Colors.green,
     Colors.red
@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() async{
     super.initState;
-    currencies = await getCurrencies();
+    currencies = getCurrencies();
   }
 
   Future<List> getCurrencies() async {
